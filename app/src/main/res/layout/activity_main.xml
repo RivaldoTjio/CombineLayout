@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        style="@style/CollumnsHead"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Daftar Belanja"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/judul"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_column="0"
+                android:text="No"
+                style="@style/CollumnsHead"/>
+            <TextView
+                android:text="Nama Barang "
+                style="@style/CollumnsHead"/>
+            <TextView
+                android:text="Jumlah"
+                style="@style/CollumnsHead"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+            <TextView
+                android:text="1"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="Kentank"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="2Kg"
+                style="@style/ItemStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+            <TextView
+                android:text="2"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="Wortel"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="1Kg"
+                style="@style/ItemStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+            <TextView
+                android:text="3"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="Gula"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="2Kg"
+                style="@style/ItemStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+            <TextView
+                android:text="4"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="Garam"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="500gr"
+                style="@style/ItemStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+            <TextView
+                android:text="5"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="Ayam"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="2Kg"
+                style="@style/ItemStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+            <TextView
+                android:text="6"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="Sawi Putih"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="1Kg"
+                style="@style/ItemStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+            <TextView
+                android:text="7"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="Buncis"
+                style="@style/ItemStyle"/>
+            <TextView
+                android:text="250gr"
+                style="@style/ItemStyle"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_below="@id/tablelayout"
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_rectangle"
+            android:textColor="@android:color/white"
+            android:text="Keluar"/>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:layout_gravity="end|bottom"
+            android:text="+"
+            android:textSize="36sp"
+            android:layout_marginStart="350dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="32dp"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
